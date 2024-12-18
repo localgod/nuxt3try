@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
     sanity: {
-      projectId: process.env.SANITY_PROJECT_ID,
       dataset: process.env.SANITY_DATASET,
     },
   },
@@ -15,6 +14,7 @@ export default defineNuxtConfig({
     '@nuxtjs/sanity'
   ],
   sanity: {
+    projectId: 'uy0ayswl',
     apiVersion: new Date().toISOString().split('T')[0]
   }
 })
