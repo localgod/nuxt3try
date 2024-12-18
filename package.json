@@ -13,6 +13,7 @@
     "@nuxt/content": "^2.13.4",
     "@nuxtjs/leaflet": "^1.2.5",
     "nuxt": "^3.14.1592",
+    "usebootstrap": "^3.5.100",
     "vue": "latest",
     "vue-router": "latest"
   }

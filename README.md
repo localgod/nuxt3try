@@ -73,3 +73,9 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Add modules
+
+- npx nuxi@latest module add content
+- npx nuxi@latest module add @nuxtjs/leaflet
+- npx nuxi@latest module add usebootstrap
