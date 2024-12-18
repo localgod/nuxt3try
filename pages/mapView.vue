@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <Container>
       <div style="height:80vh; width:80vw">
         <!-- https://github.com/Gugustinette/Nuxt-Leaflet -->
         <LMap :zoom="zoom" :center="center" :use-global-leaflet="false">
@@ -9,12 +9,10 @@
           <LGeoJson :geojson="combined" :options-style="geoStyler" :options="{ onEachFeature }" />
         </LMap>
       </div>
-    </div>
+    </Container>
   </template>
   
   <script setup lang="ts">
-  import { LMap, LTileLayer, LGeoJson } from "@vue-leaflet/vue-leaflet";
-  import { L } from 'leaflet'
   import type { PointExpression, StyleFunction } from 'leaflet'
   import type { FeatureCollection, Feature } from 'geojson'
   const zoom = 17

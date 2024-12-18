@@ -1,12 +1,12 @@
 <template>
-  <div class="container">
+  <Container>
     <h1>Junviglund</h1>
     <div class="row">
       <div v-for="p in posts" :key="p._id" class="col-sm-12">
         <BlogPost :post="p" />
       </div>
     </div>
-  </div>
+  </Container>
 </template>
 
 <script setup lang="ts">
